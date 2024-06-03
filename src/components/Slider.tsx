@@ -13,7 +13,6 @@ const Slider = () => {
         end: "top -100%",
         scrub: 2,
         pin: true,
-        markers: true,
       },
     });
   });
