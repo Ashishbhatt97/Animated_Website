@@ -13,6 +13,11 @@ const LatestDrop = () => {
       y: 100,
       opacity: 0,
       duration: 1,
+      stagger: 0.3,
+      scrollTrigger: {
+        trigger: ".latestDrop",
+        start: "top 80%",
+      },
     });
   });
 
@@ -26,7 +31,7 @@ const LatestDrop = () => {
         {profiles.map((profile, idx) => (
           <div key={idx}>
             <div className="latestDrop w-[300px] h-[400px] bg-slate-950/50 rounded-[24px] p-6 flex flex-col">
-              <div className="w-[240px] h-[250px] bg-gray-900 rounded-[16px] overflow-hidden">
+              <div className="pics w-[240px] h-[250px] bg-gray-900 rounded-[16px] overflow-hidden">
                 <Image
                   src={profile.ImageSource}
                   width={500}

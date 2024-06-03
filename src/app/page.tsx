@@ -10,6 +10,7 @@ import Hero from "@/components/Hero";
 import LatestDrop from "@/components/LatestDrop";
 import Marquee from "@/components/Marquee";
 import TextReveal from "@/components/TextReveal";
+import Slider from "@/components/Slider";
 
 const Page = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -105,6 +106,7 @@ const Page = () => {
         <LatestDrop />
         <Marquee />
         <TextReveal />
+        <Slider />
       </div>
     </>
   );
